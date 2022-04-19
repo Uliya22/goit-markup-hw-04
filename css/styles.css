@@ -59,7 +59,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 .list {
     list-style: none;
@@ -139,7 +139,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color); 
+    color: var(--primary-text-color);
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -148,10 +148,19 @@ img {
 
 /* Hero */
 .hero {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: var(--dark-bg-color);
+    background-color: #C4C4C4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg.jpg);
 }
 .hero-title {
     margin-bottom: 30px;
@@ -210,6 +219,29 @@ img {
 .item-spesifics {
     width: 270px;
 }
+.item-spesifics::before {
+   display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    /* outline: 1px solid #d71b1b; */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--buttom-bg-color)
+}
+.item-spesifics.icon-antenna::before {
+    background-image: url(../images/antenna\ 1.svg);
+}
+.item-spesifics.icon-clock::before {
+    background-image: url(../images/clock\ 1.svg);
+}
+.item-spesifics.icon-diagram::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+.item-spesifics.icon-astronaut::before {
+    background-image: url(../images/astronaut\ 1.svg);
+}
 .section-title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -266,6 +298,8 @@ img {
     text-align: center;
     font-size: 16px;
     line-height: 1.2;
+}
+.clients {
 }
 
 /* Portfolio */
