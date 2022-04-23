@@ -308,12 +308,14 @@ img {
 .team-soc-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     color: #afb1b8;
 }
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
 }
@@ -323,9 +325,7 @@ img {
 .icon-soc-team:hover {
     fill: currentColor;
 }
-/* .icon-soc-team:hover {
-    fill: currentColor; */
-/* } */
+
 /* Постоянные клиенты */
 .client-list {
     display: flex;
@@ -344,14 +344,16 @@ img {
     cursor: pointer;
     color: #afb1b8;
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     border: solid var(--accent-color);
     color: var(--accent-color);
 }
 .icon-client {
     fill: currentColor;
 }
-.icon-client:hover {
+.icon-client:hover,
+.icon-client:focus {
     fill: currentColor;
 }
 /* Portfolio */
@@ -398,7 +400,12 @@ img {
     padding: 60px 0px; 
     background-color: var(--dark-bg-color);
 }
-
+.footer-container {
+    display: flex;
+}
+.footer-contact-container {
+    margin-right: 70px;
+}
 .logo-link {
     display: block;
     margin-bottom: 20px;
@@ -434,5 +441,43 @@ address {
 .footer-contact:focus {
     color: var(--accent-color)
 }
-
-
+.footer-title {
+    font-size: 14px;
+    height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--light-text-color);
+}
+.footer-soc-container {
+    display: block;
+    width: 206px;
+    height: 80px;
+    margin-top: 15px;
+}
+.footer-soc-list {
+    display: flex;
+}
+.footer-soc-item {
+    display: flex;
+}
+.footer-soc-item + .footer-soc-item {
+    margin-left: 10px;
+}
+.footer-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--accent-color);
+}
+.icon-soc-footer {
+    fill: #FFFFFF;
+}
